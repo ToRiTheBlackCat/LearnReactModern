@@ -1,0 +1,11 @@
+STATE và PROPS
+
+Có 2 loại model cho data trong ứng dụng React: props và state. Và chúng khác hẳn nhau:
+- Props (viết tắt là properties - tài sản thừa hưởng (belong to someone)):
+    + Cho phép parent component truyền data xuống child component (parent to child)
+    ex: pass 'color' props to a Button
+
+- State (Component's memory):
+    + Giúp component biết nó đang kiểm soát thông tin gì (keep track of informations)
+    + Thực hiện thay đổi tương ứng khi có sự tương tác của người dùng
+    ex: form with input state
