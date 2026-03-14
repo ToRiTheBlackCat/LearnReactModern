@@ -9,3 +9,21 @@ Có 2 loại model cho data trong ứng dụng React: props và state. Và chún
     + Giúp component biết nó đang kiểm soát thông tin gì (keep track of informations)
     + Thực hiện thay đổi tương ứng khi có sự tương tác của người dùng
     ex: form with input state
+
+DATA FLOWS - Luồng chảy dữ liệu
+React data flow: top to bottom, parent to child (with props)
+=> one-way data binding
+
+one-way vs two way binding:
+ex: two way binding with angular 2: https://angular.io/guide/two-way-binding
+- View (html) => Update Model (js/ts)
+- Model (js/ts) => update View (html)
+
+ex: one way binding with react: form with input
+state => control
+Model (js/ts) => Update View (jsx)
+
+Khi sử dụng React để quản lý quá nhiều trường thông qua useState sẽ gây lag (Controlled) 
+>< Sử dụng Uncontrolled
+useRef thay vì useState để tránh re-render
+=> Rec: Dùng Controlled Component để cho React quản lý
