@@ -5,8 +5,8 @@ import "./Lesson9.scss";
 const Lesson9 = (props) => {
   return (
     <div className="lesson9-container">
-      <EventPreventDefault />
-      {/* <EventPropagation /> */}
+      {/* <EventPreventDefault /> */}
+      <EventPropagation />
     </div>
   );
 };
