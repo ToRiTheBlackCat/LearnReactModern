@@ -27,3 +27,7 @@ Khi sử dụng React để quản lý quá nhiều trường thông qua useStat
 >< Sử dụng Uncontrolled
 useRef thay vì useState để tránh re-render
 => Rec: Dùng Controlled Component để cho React quản lý
+
+event.stopPropagation(): ngăn chặn việc event handler được gọi ở lớp phía trên (lớp cha)
+event.preventDefault(): ngăn việc hành động mặc định của browser đối với 1 số event, ví
+dụ onSubmit form thì refresh lại website
