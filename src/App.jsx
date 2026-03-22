@@ -13,6 +13,7 @@ import Lesson9 from "./lessons/Lesson9/Lesson9";
 import Lesson10 from "./lessons/Lesson10/Lesson10";
 import Lesson17 from "./lessons/chapter3/Lesson17";
 import Lesson18 from "./lessons/chapter3/Lesson18";
+import Lesson19 from "./lessons/chapter3/Lesson19";
 const App = () => {
   const [count, setCount] = useState(0);
 
@@ -23,7 +24,7 @@ const App = () => {
         count={count}
         setCount={setCount}
       /> */}
-      <Lesson18 />
+      <Lesson19 />
       <Footer />
     </div>
   );
