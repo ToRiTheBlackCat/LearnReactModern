@@ -1,13 +1,29 @@
 import CalculateVAT from "./CalculateVAT";
 import "./Lesson10.scss";
+import { useEffect, useRef } from "react";
 
 const Lesson10 = (props) => {
+  const firstRender = useRef(true);
+
+  useEffect(() => {
+    console.log("run me");
+
+    if (firstRender.current) {
+      console.log("aaaaa");
+    }
+
+    if (firstRender && firstRender.current) {
+      firstRender.current = false;
+    }
+  }, []);
   //  pure function
   function calculateVAT(productPrice) {
     return productPrice * 0.05;
   }
 
-  console.log(">>> VAT === ", calculateVAT(100));
+  if (firstRender.current) {
+    console.log(">>> VAT === ", calculateVAT(100));
+  }
 
   // ex not pure (impure) function (không phụ thuộc vào input đầu vào)
   var tax = 5;
