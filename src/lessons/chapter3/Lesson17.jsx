@@ -52,10 +52,10 @@ const Lesson17 = (props) => {
   x = x + 1; // 9007199254740992 (same as above => bugs)
   console.log(">>> check x = ", x);
 
-  let y = BigInt(Number.MAX_SAFE_INTEGER);
-  y = y + 1; // 9007199254740992n
-  y = y + 1; // 9007199254740993n (correct now)
-  console.log(">>> check y = ", y);
+  // let y = BigInt(Number.MAX_SAFE_INTEGER);
+  // y = y + 1; // 9007199254740992n
+  // y = y + 1; // 9007199254740993n (correct now)
+  // console.log(">>> check y = ", y);
 
   // 7.symbol (ES6)
   // - Để tạo 1 biến symbol, sử dụng hàm Symbol()
@@ -63,6 +63,7 @@ const Lesson17 = (props) => {
   // - Symbol() function tạo ra giá trị 'độc nhất' (unique) mỗi lần gọi nó.
   // console.log(Symbol() === Symbol()); // false
 
+  //object datatypes:
   //     "Normal" object: { key: value }
   //     const person = { name: 'ABC', address: 'HN' }
 
@@ -71,6 +72,18 @@ const Lesson17 = (props) => {
   // Indexed collections: Arrays
 
   // Keyed collections: Maps, Sets, WeakMaps, WeakSets
+
+  let a = {};
+  console.log(">>> check type of a = ", typeof a); // object
+
+  let b = { name: "Tri", address: "HCM" };
+  console.log(">>> check type of b = ", typeof b); // object
+
+  let c = ["a", "b", "c"];
+  console.log(">>> check type of c = ", typeof c); // object (array is a type of object)
+
+  let d = new Date();
+  console.log(">>> check type of d = ", typeof d); // object (date is a type of object)
 
   return <div className="lesson17">Primitive datatypes</div>;
 };
